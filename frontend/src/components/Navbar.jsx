@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between h-20 shadow-md bg-gray-300 p-5'>
       <div className='flex items-center'>
-        <img src={logo} className='h-10 w-10 rounded-md' alt="" />
-        <h2 className='font-bold text-2xl'>Nearest <span className='text-blue-800'>Doctor</span></h2>
+        <img src={logo} className='h-10 w-10 rounded-md cursor-pointer' alt="" />
+        <Link to={"/"}><h2 className='font-bold text-2xl'>Nearest <span className='text-blue-800'>Doctor</span></h2></Link>
       </div>
       <div className='flex items-center'>
         <ul className='flex gap-7 text-xl font-medium cursor-pointer'>
