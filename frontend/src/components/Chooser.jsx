@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import doctor from "../assets/doctor.webp";
 import patient from "../assets/about1.jpg"
+import { Link } from "react-router-dom";
 
 const Chooser = () => {
   return (
@@ -25,9 +26,9 @@ const Chooser = () => {
             className="h-40 w-full object-cover rounded-xl mb-4"
           />
           <h2 className="text-2xl font-bold mb-4">As a Doctor</h2>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
+          <Link to={"/register"} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
             Sign Up
-          </button>
+          </Link>
         </div>
 
         {/* Patient Card */}
@@ -38,9 +39,9 @@ const Chooser = () => {
             className="h-40 w-full object-cover rounded-xl mb-4"
           />
           <h2 className="text-2xl font-bold mb-4">As a Patient</h2>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
+          <Link to={"/register"} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
             Sign Up
-          </button>
+          </Link>
         </div>
       </div>
 
