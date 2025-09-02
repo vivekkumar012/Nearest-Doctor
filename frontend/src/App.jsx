@@ -14,6 +14,7 @@ function App() {
         <Route path='/chooser' element={<Chooser />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Signup />} />
+        
       </Routes>
     </div>
   )
