@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import HeroPage from "./HeroPage";
 import Footer from "./Footer";
+import DoctorsSection from "../pages/DoctorsSection";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar />
       <div className="pt-20">
         <HeroPage />
+        <DoctorsSection />
         <Footer />
       </div>
     </div>
